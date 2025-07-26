@@ -1,5 +1,5 @@
 body {
-    background-color: aliceblue;
+    background-color: #eaf6fd;
 }
 
 /* General Navbar Styles */
@@ -75,11 +75,6 @@ nav a {
     background: linear-gradient(to right, rgb(64, 64, 218), rgb(16, 19, 107), rgb(13, 5, 86), rgb(7, 7, 47));
     -webkit-background-clip: text;
     background-clip: text;
-    background-clip: text;
-    background-clip: text;
-    background-clip: text;
-    background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -87,6 +82,7 @@ h1 span {
     font-size: 68px;
     background: linear-gradient(to left, rgb(151, 92, 50), rgb(86, 61, 9), rgb(64, 46, 7), rgb(39, 29, 3));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -202,6 +198,8 @@ body {
 
 .icon:hover {
     box-shadow: 0px 0px 8px blue;
+    transform: scale(1.1);
+
 }
 
 
@@ -217,5 +215,123 @@ body {
 
 .btn a:hover {
     color: black !important;
+
+}
+
+.container1 .article {
+    background: url(../img/surface-laptop-7th-edition-display-size-reduced-motion.avif)no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin: 60px 0px 40px 0px;
+}
+
+@keyframes identifier {
+    0% {
+        transform: translateY(-50px);
+    }
+
+    /* 25% {
+        transform: translateY(-25px);
+
+    }
+
+    50% {
+        transform: translateY(-100px);
+    }
+
+    75% {
+        transform: translate(-125);
+    } */
+
+    100% {
+        transform: translateY(-150px);
+    }
+}
+
+.animation:hover .animation-I {
+
+    animation: identifier 3s ease 0s 1 alternate forwards;
+
+}
+
+.scroll-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.angle {
+    background: linear-gradient(to top,
+            #eaf6fd, #eaf6fd, rgba(248, 121, 30, 0.17), #eaf6fd, #eaf6fd);
+}
+
+.scroll {
+    height: 290px;
+    width: 300px;
+}
+
+.scroll:hover {
+    transform: translateY(-2100px);
+    transition: all 39s ease-out;
+}
+
+.card {
+    overflow: hidden;
+}
+
+
+
+.card1 h5 {
+    font-size: 15px;
+}
+
+.card1 p {
+    font-size: 12px;
+}
+
+section {
+    margin-bottom: 200px !important;
+}
+
+main {
+    margin-bottom: 300px !important;
+}
+
+header {
+    margin-bottom: 200px !important;
+
+}
+
+table td {
+    font-size: 13px;
+}
+
+.card-body-1 h5 {
+    font-size: 16px !important;
+}
+
+.card-body-1 p {
+    font-size: 12px;
+}
+
+.translate {
+    transition: all 0.9s ease;
+}
+
+.on-button:hover .translate {
+    transform: translateX(21px);
+}
+
+.on-button {
+    transition: all 0.1s ease;
+    transition-delay: 0.3s;
+}
+
+.on-button:hover {
+    background-color: blue !important;
 
 }

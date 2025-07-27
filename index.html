@@ -28,12 +28,12 @@
     <!--======= swiper============-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
-        swiper-container {
+        .swiper {
             width: 100%;
             height: 100%;
         }
 
-        swiper-slide {
+        .swiper-slide {
             text-align: center;
             font-size: 18px;
             background: #444;
@@ -42,11 +42,9 @@
             align-items: center;
         }
 
-        swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .swiper-slide video {
+            max-width: 100%;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -68,6 +66,22 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button"
                             data-bs-toggle="dropdown">Computers</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Computers
+                            For Business</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Accessories</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -121,7 +135,8 @@
 
             <div class="video-background">
                 <video autoplay muted loop playsinline>
-                    <source src="img/surface-laptop-7th-edition-noncolor-hero-desktop_en-us.mp4" type="video/mp4">
+                    <source src="img/surface-laptop-7th-edition-noncolor-hero-desktop_en-us.mp4" width="400px"
+                        type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <div class="video-overlay-content text-white text-center">
@@ -606,33 +621,53 @@
         </div>
     </section>
     <!--============ swiper=============-->
+    <!-- Swiper HTML -->
     <main class="slides">
         <div class="text-center">
-            <div class="text-center">
-                <h1>Security at home or on the go</h1>
-            </div>
-            <div class="swiper-main">
-
-                <swiper-container class="mySwiper" scrollbar-hide="true">
-                    <swiper-slide> <video width="50%" class="" autoplay muted loop playsinline>
-                            <source src="img/surface-laptop-7th-edition-windows-hello-0x720-3266k.mp4" type="video/mp4">
+            <h1 style="margin-bottom: 50px;">Security at home or on the go</h1>
+            <div class="swiper mySwiper pt-5 position-relative z-index-1" style="width: 1000px;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <video autoplay muted loop playsiline>
+                            <source src="img/surface-laptop-7th-edition-windows-hello-0x720-3266k.mp4"
+                                type="video/mp4" />
                         </video>
-                    </swiper-slide>
-                    <swiper-slide> <video width="50%" class="" autoplay muted loop playsinline>
-                            <source src="img/surface-laptop-7th-edition-pluton-0x720-3266k.mp4" type="video/mp4">
-                        </video></swiper-slide>
-                    <swiper-slide> <video width="50%" class="" autoplay muted loop playsinline>
-                            <source src="img/surface-laptop-7th-edition-defender-0x720-3266k.mp4" type="video/mp4">
-                        </video></swiper-slide>
-                </swiper-container>
 
+                        <div class="para">
+                            <h2> <img src="img/windows-hello.svg" width="58px" alt=""> Windows Hello</h2>
+                            <span style="font-size: 0.8rem;">Securely log in to your Surface Laptop with nothing but a
+                                glance.</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <video autoplay muted loop playsinline>
+                            <source src="img/surface-laptop-7th-edition-pluton-0x720-3266k.mp4" type="video/mp4" />
+                        </video>
+                        <div class="para">
+                            <h2> <img src="img/pluton.svg" width="58px" alt=""> Microsoft Pluton</h2>
+                            <span style="font-size: 0.8rem;">Built-in security and peace of mind that protects your data
+                                from bad actors online or in person.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <video autoplay muted loop playsinline>
+                            <source src="img/surface-laptop-7th-edition-defender-0x720-3266k.mp4" type="video/mp4" />
+                        </video>
+                        <div class="para">
+                            <h2> <img src="img/defender-2.svg" width="58px" alt=""> Microsoft Defender</h2>
+                            <span style="font-size: 0.8rem;">Seamlessly protect you and your family’s data and
+                                devices.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Optional Scrollbar -->
+                <div class="swiper-scrollbar"></div>
             </div>
         </div>
-
-
-
-
     </main>
+
+
 
 
     <main class="d-flex  margin py-4 px-4 bg-light ">
@@ -923,7 +958,117 @@
 
 
 
+    <section class="swiper-II bg-light mb-0 pt-2">
+        <div class="text-center ">
+            <h5>Surface Laptop accessories </h5>
+            <h1 class="mb-0">Make it the perfect fit</h1>
 
+            <main class="slides mb-0 bg-light">
+                <div class="text-center ">
+                    <h1 style="margin-bottom: 50px;">Security at home or on the go</h1>
+                    <div class="swiper mySwiper pt-5 position-relative1 " style="width: 800px;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide w-100 myswiper bg-light">
+                                <img src="img/surface-usb-c-travel-hub.avif"
+                                    class="object-fluid-cover img-fluid bg-light" width="480px">
+
+                                <div class="para1 text-right p-4">
+                                    <h6> Surface USB-C® Travel Hub
+                                    </h6>
+                                    <span style="font-size: 0.7rem;">Transform your laptop into a versatile productivity
+                                        companion with this elegant, multi-port adapter that includes USB-C®. <sup> <a
+                                                href="">1</a> </sup><br>
+                                        <a href=""><button class="btn m-1 p-1">Shop now</button></a>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-100 myswiper bg-light">
+                                <img src="img/surface-thunderbolt-4-dock.avif"
+                                    class="object-fluid-cover img-fluid bg-light" width="480px">
+
+                                <div class="para1 text-right p-4">
+                                    <h6> Surface Arc Mouse</h6>
+                                    <span style="font-size: 0.7rem;">Slim, light and ready to travel, Surface Arc Mouse
+                                        is designed to conform to your hand and snaps flat to fit easily in your bag.
+                                        Connects via Bluetooth. <sup> <a href="">1</a> </sup><br>
+                                        <a href=""><button class="btn m-1 p-1">Shop now</button></a>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide w-100 myswiper bg-light">
+                                <img src="img/surface-arc-mouse-light-gray (1).avif"
+                                    class="object-fluid-cover img-fluid bg-light" width="450px">
+
+                                <div class="para1 text-right p-4">
+                                    <h6> Surface Arc Mouse</h6>
+                                    <span style="font-size: 0.7rem;">Slim, light and ready to travel, Surface Arc Mouse
+                                        is designed to conform to your hand and snaps flat to fit easily in your bag.
+                                        Connects via Bluetooth. <sup> <a href="">1</a> </sup><br>
+                                        <a href=""><button class="btn m-1 p-1">Shop now</button></a>
+
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- Optional Scrollbar -->
+                            <div class="swiper-scrollbar position-relative top-3"></div>
+                        </div>
+                    </div>
+            </main>
+
+
+        </div>
+    </section>
+
+
+
+
+    <section class="explore  bg-light mb-0 pt-2">
+        <div class="text-center ">
+            <h1>Explore what’s inside </h1>
+            <h6 class="mb-0 fw-normal" style="font-size: 0.8rem;">See the full list of features and specifications
+                included
+                in Surface Laptop.</>
+                <div><a href=""><button class="btn text-light m-3">Show all specs</button></a></div>
+
+                <div class="container text-center my-4">
+                    <div class="row justify-content-center">
+
+                        <div class="col-6 col-sm-2 mb-4">
+                            <img src="img/MSFT-Surface-prefooter-business-svgicon.svg" alt="Business" width="37">
+                            <div><a href="#" class="text-primary text-decoration-none fw-semibold">Surface for your
+                                    Business</a></div>
+                        </div>
+
+                        <div class="col-6 col-sm-2 mb-4">
+                            <img src="img/MSFT-Surface-prefooter-accessories-svgicon.svg" alt="Accessories" width="37">
+                            <div><a href="#" class="text-primary fw-semibold">Accessories</a></div>
+                        </div>
+
+                        <div class="col-6 col-sm-2 mb-4">
+                            <img src="img/MSFT-surface-prefooter-support-svgicon.svg" alt="Support" width="40">
+                            <div><a href="#" class="text-primary  fw-semibold">Surface support</a>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-sm-2 mb-4">
+                            <img src="img/MSFT-Surface-prefooter-register-svgicon.svg" alt="Register" width="40">
+                            <div><a href="#" class="text-primary  fw-semibold">Register your
+                                    Surface</a></div>
+                        </div>
+
+                        <div class="col-6 col-sm-2 mb-4">
+                            <img src="img/MSFT-Power-cord-recall-icon-1.svg" alt="Power Cord Recall" width="40">
+                            <div><a href="#" class="text-primary  fw-semibold">Power cord recall</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+        </div>
+    </section>
 
 
 
@@ -1335,7 +1480,127 @@
 
         </ul>
 
+        <div class="container mt-4 ">
+            <!-- Follow Surface -->
+            <div class="d-flex align-items-center  gap-3 mb-2">
+                <span>Follow Surface</span>
+                <img src="img/facebook.webp" alt="Facebook" width="28">
+                <img src="img/Icon_NewsSocial_68x68.webp" alt="X" width="28">
+                <img src="img/instagram.avif" alt="Instagram" width="28">
+                <img src="img/linkedin.avif" alt="LinkedIn" width="28">
+            </div>
+
+            <!-- Share this page -->
+            <div class="d-flex align-items-center gap-3">
+                <span>Share this page</span>
+                <img src="img/facebook.webp" alt="Facebook" width="28">
+                <img src="img/Icon_NewsSocial_68x68.webp" alt="X" width="28">
+                <img src="img/linkedin.avif" alt="LinkedIn" width="28">
+            </div>
+        </div>
+
+
     </section>
+    <!---============= footer ================-->
+
+    <footer class="bg-light text-dark pt-5 pb-3">
+        <div class="container">
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6">
+                <!-- Column 1 -->
+                <div class="col mb-4">
+                    <h6 class="fw-bold">What's new</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Surface Pro</a></li>
+                        <li><a href="#">Surface Laptop</a></li>
+                        <li><a href="#">Microsoft Copilot</a></li>
+                        <li><a href="#">Microsoft 365</a></li>
+                        <li><a href="#">Explore Microsoft products</a></li>
+                        <li><a href="#">Windows 11 apps</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col mb-4">
+                    <h6 class="fw-bold">Microsoft Store</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Account profile</a></li>
+                        <li><a href="#">Download Center</a></li>
+                        <li><a href="#">Microsoft Store Support</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order tracking</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col mb-4">
+                    <h6 class="fw-bold">Education</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Microsoft in education</a></li>
+                        <li><a href="#">Devices for education</a></li>
+                        <li><a href="#">Microsoft Teams for Education</a></li>
+                        <li><a href="#">Microsoft 365 Education</a></li>
+                        <li><a href="#">Office Education</a></li>
+                        <li><a href="#">Educator training</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col mb-4">
+                    <h6 class="fw-bold">Business</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Microsoft Cloud</a></li>
+                        <li><a href="#">Microsoft Security</a></li>
+                        <li><a href="#">Azure</a></li>
+                        <li><a href="#">Dynamics 365</a></li>
+                        <li><a href="#">Microsoft Advertising</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5 -->
+                <div class="col mb-4">
+                    <h6 class="fw-bold">Developer & IT</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Microsoft Developer</a></li>
+                        <li><a href="#">Microsoft Learn</a></li>
+                        <li><a href="#">AI marketplace support</a></li>
+                        <li><a href="#">Tech Community</a></li>
+                        <li><a href="#">Visual Studio</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 6 -->
+                <div class="col mb-4">
+                    <h6 class="fw-bold">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">About Microsoft</a></li>
+                        <li><a href="#">Company news</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Language & Legal -->
+            <div
+                class="d-flex flex-wrap justify-content-between align-items-center border-top pt-3 mt-3 text-muted small">
+                <div>
+                    <span>🌐 English (India)</span>
+                    <span class="ms-1">Your Privacy Choices</span>
+                    <a href="#">Consumer Health Privacy</a>
+                </div>
+                <div class="text-end">
+                    <a href="#">Contact Microsoft</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms of use</a>
+                    <a href="#">Trademarks</a>
+                    <a href="#">About our ads</a>
+                    © Microsoft 2025
+                </div>
+            </div>
+        </div>
+    </footer>
+
 
 </body>
 <!-- <script src=" https://unpkg.com/swiper/swiper-bundle.min.js">
@@ -1356,6 +1621,20 @@
     crossorigin="anonymous"></script>
 <!--========== swiper js===========-->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.mySwiper', {
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            hide: true,
+        },
+    });
+</script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@ body {
 
 /* General Navbar Styles */
 nav a {
-    font-size: 14px !important;
+    font-size: 10px !important;
 }
 
 /* Navbar-I Styles */
@@ -35,6 +35,26 @@ nav a {
 }
 
 .nav-II .btn:hover {
+    background-color: rgb(30, 30, 81) !important;
+
+}
+
+.para1 .btn {
+    background-color: rgb(45, 45, 201) !important;
+    color: white;
+    font-size: 10.72px;
+}
+
+.explore .btn {
+    background-color: rgb(42, 42, 161) !important;
+}
+
+.explore .btn:hover {
+    background-color: rgb(30, 30, 81) !important;
+
+}
+
+.para1 .btn:hover {
     background-color: rgb(30, 30, 81) !important;
 
 }
@@ -520,4 +540,57 @@ optgroup {
 
 .hidden {
     visibility: hidden;
+}
+
+.para {
+    position: absolute;
+    z-index: 2;
+    bottom: 420px;
+    left: 40px;
+    height: 120px;
+    width: 400px;
+    background-color: #eaf6fd;
+    border: 1px solid blue;
+    border-radius: 20px;
+}
+
+.para1 {
+    position: absolute;
+    z-index: 2;
+    bottom: -20px;
+    left: 530px;
+    /* top: 200px;
+    left: 700px; */
+    height: 220px;
+    width: 300px;
+    text-align: left;
+    background-color: #fcfefe;
+    border-radius: 20px;
+}
+
+.position-relative1 img {
+    position: relative;
+    right: 55px;
+    bottom: 50px;
+}
+
+footer {
+    background-color: #414040;
+
+}
+
+footer h6 {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+footer a {
+    color: #504f4f;
+    text-decoration: none;
+    font-size: 0.6rem;
+    line-height: 30px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

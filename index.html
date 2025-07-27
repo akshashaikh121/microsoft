@@ -25,8 +25,30 @@
 
     <!--==========coustum css ===========-->
     <link rel="stylesheet" href="css/style.css">
+    <!--======= swiper============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        swiper-container {
+            width: 100%;
+            height: 100%;
+        }
 
+        swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
+        swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
@@ -301,27 +323,27 @@
 
         <div class="d-flex justify-content-center align-items-center animation-I mt-5">
 
-            <div class="swiper d-flex flex-column justify-content-center  align-items-center gap-4 col-md-3">
+            <div class="swiper1 d-flex flex-column justify-content-center  align-items-center gap-4 col-md-3">
                 <div class="btn rounded-circle d-flex justify-content-center p-2 bg-white border-primary border-3"><img
                         src="img/up-arrow_154695.png" width="20px" alt=""></div>
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" id="swiper">
+                <div class="swiper-wrapper1">
+                    <div class="swiper-slide1" id="swiper">
 
-                        <a href="#swiper"></a><img src="img/Live-Captions-png.avif" class="icon " /> </a>
+                        <a href="#swiper1"></a><img src="img/Live-Captions-png.avif" class="icon " /> </a>
                         <buttonv class="btn p-0 border-0 "> Live Caption</button>
 
                     </div>
-                    <div class="swiper-slide">
-                        <a href="#swiper"> <img src="img/lightroom.avif" class="icon" /></a> <button
+                    <div class="swiper-slide1">
+                        <a href="#swiper1"> <img src="img/lightroom.avif" class="icon" /></a> <button
                             class="btn border-0 p-0"> Adobe
                             lightroom</button>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="#swiper"> <img src="img/Recall-FY24-JPG.avif" class="icon" /></a><button
+                    <div class="swiper-slide1">
+                        <a href="#swiper1"> <img src="img/Recall-FY24-JPG.avif" class="icon" /></a><button
                             class="btn p-0 border-0">Recall</button>
                     </div>
-                    <div class="swiper-slide">
-                        <a href="#swiper"> <img src="img/camera-FY24-1.avif" class="icon"></a>
+                    <div class="swiper-slide1">
+                        <a href="#swiper1"> <img src="img/camera-FY24-1.avif" class="icon"></a>
                         <button class="btn border-0 p-0"> Windows Studio Effects</button>
                     </div>
                 </div>
@@ -379,7 +401,7 @@
         </div>
     </section>
     <section class="d-flex angle flex-column text-center">
-        <div>
+        <div class="scroll-container-1">
             <div id="angle">
                 <h1>Gorgeous at every angle</h1>
                 <h6 class="fw-normal">This is power, this is portability.</h6>
@@ -499,15 +521,20 @@
     </section>
 
     <section class="ai-powered">
+        <div class="text-center ai  py-5">
+            <h1><span class="h1">AI-</span><span>powered</span></h1>
 
+            <h2>Surface Studio Camera</h2>
 
-        <div class="content d-flex align-items-start">
-            <div class="img-content ">
-                <img src="img/surface-laptop-7th-edition-camera-1.jpeg" width="900px" class="img-fluid rounded-start"
+        </div>
+
+        <div class="content row align-items-center ">
+            <div class="col-md-6 img-content ">
+                <img src="img/surface-laptop-7th-edition-camera-1.jpeg" width="100%" class="img-fluid rounded-start"
                     alt="...">
             </div>
-            <div class="table3-content">
-                <div class="card border-primary mt-0 " style="max-width: 540px; height: 300px;">
+            <div class="col-md-5 table3-content">
+                <div class="card border-primary mt-0 ">
                     <div class="row g-0 d-flex align-items-center">
                         <div class="col-md-2">
                             <img src="img/surface-laptop-7th-edition-studio-camera.svg" class="img-fluid rounded-start"
@@ -577,26 +604,758 @@
 
             </div>
         </div>
+    </section>
+    <!--============ swiper=============-->
+    <main class="slides">
+        <div class="text-center">
+            <div class="text-center">
+                <h1>Security at home or on the go</h1>
+            </div>
+            <div class="swiper-main">
+
+                <swiper-container class="mySwiper" scrollbar-hide="true">
+                    <swiper-slide> <video width="50%" class="" autoplay muted loop playsinline>
+                            <source src="img/surface-laptop-7th-edition-windows-hello-0x720-3266k.mp4" type="video/mp4">
+                        </video>
+                    </swiper-slide>
+                    <swiper-slide> <video width="50%" class="" autoplay muted loop playsinline>
+                            <source src="img/surface-laptop-7th-edition-pluton-0x720-3266k.mp4" type="video/mp4">
+                        </video></swiper-slide>
+                    <swiper-slide> <video width="50%" class="" autoplay muted loop playsinline>
+                            <source src="img/surface-laptop-7th-edition-defender-0x720-3266k.mp4" type="video/mp4">
+                        </video></swiper-slide>
+                </swiper-container>
+
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+
+    <main class="d-flex  margin py-4 px-4 bg-light ">
+        <!--============== left content start================-->
+
+        <div col-md-6>.
+            <div class="row">
+                <div class="text-jutify" data-aos="fade-up">
+                    <h1>Designed with sustainability in mind</h1>
+                    <div data-aos="fade-up">
+                        <p>With more recycled materials, thoughtful packaging and increased built-in efficiency, we
+                            design Surface products with the circular economy in mind. Surface Laptop is another step
+                            toward Microsoft’s goal to be carbon negative, water positive, and achieve zero waste by
+                            2030.</p>
+                    </div>
+                </div>
+                <div class="link"><a href="#">Learn about Surface sustainability
+                    </a></div>
+                <div>
+                    <!--============== Card section star ================-->
+
+                    <div class="card m-3 p-2 text-start border-primary" style="max-width: 540px;">
+                        <div class="row g-0">
+
+                            <div class="">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        More recycled materials</h5>
+                                    <p class="card-text">The enclosure is made with a minimum of 67.2% recycled
+                                        content, including 100% recycled aluminium alloy.<sup> <a href="">18</a> </sup>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-3 text-start p-2 border-primary" style="max-width: 540px;">
+                        <div class="row g-0">
+
+                            <div class="">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+
+
+                                        More energy efficient</h5>
+                                    <p class="card-text">Surface Laptop delivers higher performance while using less
+                                        energy than Surface Laptop 5<sup> <a href="">5</a> </sup>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--============== Card section end ================-->
+
+                <div></div>
+            </div>
+        </div>
+
+
+        <!--============== left content end ================-->
+
+
+
+        <!--============== right side content ================-->
+
+        <div class="col-md-6 bg-light">
+            <div data-aos="fade-up" data-aos-duration="2000" class=" w-50 ">
+                <video width="200%" autoplay muted loop playsinline>
+                    <source src="img/surface-laptop-7th-edition-sustainability.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- <video width="200%" class="border border-light" src="img/surface-performance_en-us-5.mp4" autoplay loop>
+                </video> -->
+            </div>
+        </div>
+    </main>
+
+
+    <section class="shop-now bg-light margin">
+        <div class="text-center ">
+            <h1>Find the Surface for you</h1>
+            <h6 class="m-0">Compare Surface Laptop features and specs and find what’s best for you.</h6>
+        </div>
+
+        <!--============= form 1============-->
+        <div class="form-section  d-flex align-items-center mt-5 pt-5">
+
+            <div class="w-50 text-center">
+                <form class="d-flex flex-column align-items-center" action="">
+                    <img src="img/surface-laptop-7th-edition-black-13-compare-render-copilot.avif" width="500px"
+                        alt="Surface Laptop Image">
+
+
+                    <select name="device" id="device" style="width: 400px; height: 32px;">
+                        <optgroup label="Laptop">
+                            <option value="surface-laptop-13">Surface Laptop 13.8-inch</option>
+                            <option value="surface-go-3" disabled>Surface Laptop 15-inc</option>
+
+                            <option value="surface-go-3">Surface Laptop Go 3</option>
+
+                        </optgroup>
+
+                        <optgroup label="2-in-1 PCs">
+                            <option value="surface-pro">Surface Pro</option>
+                            <option value="surface-pro-5g">Surface Pro with 5G</option>
+                        </optgroup>
+                    </select>
+
+                    <label class="mt-4">Platinum</label>
+                    <div
+                        class="rounded-circle btn  d-flex align-items-center justify-content-center coustom-btn  mb-4 border">
+
+                        <button
+                            class="btn d-flex align-items-center bg-secondary-subtle justify-content-center p-2 rounded-circle text-center"><img
+                                src="img/pngwing.com (15).png" width="15px" height="15px">
+                        </button>
+                    </div>
+                    <a href=""> <button class="btn bg-primary text-light m-3 p-1rounded-2 px-2 py-1"> Shop
+                            now</button></a>
+                </form>
+
+
+                <div class="link1"><a href="#">See product details
+
+                    </a></div>
+
+
+
+            </div>
+
+            <!--============= form 2============-->
+
+
+
+            <div class="w-50 text-center">
+                <form class="d-flex flex-column align-items-center" action="">
+                    <img src="img/surface-laptop-7th-edition-platinum-15-compare-render-copilot.avif" width="500px"
+                        alt="Surface Laptop Image">
+
+
+                    <select name="device" id="device" style="width: 400px; height: 32px;">
+                        <optgroup label="Laptop">
+                            <hr>
+                            <option value="surface-laptop-13">Surface Laptop 13.8-inch</option>
+                            <option value="surface-go-3">Surface Laptop 15-inc</option>
+
+                            <option value="surface-go-3">Surface Laptop Go 3</option>
+
+                        </optgroup>
+
+                        <optgroup label="2-in-1 PCs">
+                            <option value="surface-pro">Surface Pro</option>
+                            <option value="surface-pro-5g" disabled>Surface Pro with 5G</option>
+                        </optgroup>
+                    </select>
+
+                    <label class="mt-4">Platinum</label>
+                    <div <div
+                        class="rounded-circle btn  d-flex align-items-center justify-content-center coustom-btn  mb-4 border">
+
+                        <button
+                            class="btn d-flex align-items-center bg-secondary-subtle justify-content-center p-2 rounded-circle text-center"><img
+                                src="img/pngwing.com (15).png" width="15px" height="15px">
+                        </button>
+                    </div>
+
+                    <a href=""> <button class="btn bg-primary text-light m-3 p-1rounded-2 px-2 py-1"> Shop
+                            now</button></a>
+                </form>
+
+
+
+                <div>
+
+                </div>
+            </div>
+    </section>
+    <section class="bg-light mb-0 column-I p-5">
+        <h1>Highlights</h1>
+        <hr>
+
+        <div class="row justify-content-center  text-center">
+
+            <!-- Content Block 1 -->
+            <div class="col-md-3 column-main-content">
+
+                <div>
+                    <h5>2-in-1</h5>
+                </div>
+
+                <div>
+                    <span>Windows 11</span>
+                    <p>Home</p>
+                </div>
+
+                <div>
+                    <img src="img/Copilot--PC-vertical.avif" width="120px" alt="Copilot+PC">
+                </div>
+
+                <div>
+                    <p>Up to</p>
+                    <span>
+                        <img src="img/Panel12_4Up_Icon_Battery.avif" width="30px" alt="Battery Icon">
+                        9 hours web browsing
+                    </span>
+                    <p>battery life <sup><a href="#">2</a></sup></p>
+                </div>
+
+                <div>
+                    <span>
+                        <img src="img/touchscreen-black.svg" width="30px" alt="Touchscreen Icon">
+                        13-inch OLED or LCD HDR
+                    </span>
+                    <p>touchscreen <sup><a href="#">11</a></sup></p>
+                </div>
+
+                <div>
+                    <span>2 x USB-C®</span>
+                    <p>ports</p>
+                </div>
+
+                <div>
+                    <p>Up to</p>
+                    <span>4K</span>
+                    <p>camera and video</p>
+                </div>
+                <div>
+                    <span>Wi-Fi 7<sup><a href="#">43</a></sup> and 5G<sup><a href="#">41</a></sup></span>
+                </div>
+
+                <span>895g</span>
+
+            </div>
+
+            <div class="col-md-3 column-main-content ms-4">
+
+                <div>
+                    <h5>2-in-1</h5>
+                </div>
+
+                <div>
+                    <span>Windows 11</span>
+                    <p>Home</p>
+                </div>
+
+                <div>
+                    <img src="img/Copilot--PC-vertical.avif" width="120px" alt="Copilot+PC">
+                </div>
+
+                <div>
+                    <p>Up to</p>
+                    <span>
+                        <img src="img/Panel12_4Up_Icon_Battery.avif" width="30px" alt="Battery Icon">
+                        9 hours web browsing
+                    </span>
+                    <p>battery life <sup><a href="#">2</a></sup></p>
+                </div>
+
+                <div>
+                    <span>
+                        <img src="img/touchscreen-black.svg" width="30px" alt="Touchscreen Icon">
+                        13-inch OLED or LCD HDR
+                    </span>
+                    <p>touchscreen <sup><a href="#">11</a></sup></p>
+                </div>
+
+                <div>
+                    <span>2 x USB-C®</span>
+                    <span>1 x USB-A</span>
+                    <p>ports</p>
+                </div>
+
+                <div>
+                    <!-- <p class="hidden">Up to</p> -->
+                    <span>1080p</span>
+                    <p>camera and video</p>
+                </div>
+                <div>
+                    <span>Wi-Fi 7<sup><a href="#">43</a></sup> and 5G<sup><a href="#">41</a></sup></span>
+                </div>
+
+                <span>895g</span>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!--============= text section=================-->
+
+    <section class=" col-12 pt-5 bg-light margin" aria-label="Footnotes and Disclaimer">
+
+
+        <ul class="list-unstyled small mb-0">
+            <li class="py-2" data-bi-id="c1c1c2c1c17m1r1a3" data-bi-cn="c1c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote * referrer" href="#supstar" id="supstar"
+                    data-bi-cn="[*]" data-bi-ecn="[*]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c1c1c2c1c17m1r1a3">[*]</a>
+                <span>Subscription Required. Sold separately. Software licence required for some
+                    features. </span>
+            </li>
+            <li class="py-2" data-bi-id="c2c1c2c1c17m1r1a3" data-bi-cn="c2c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 1 referrer" href="#sup1" id="sup1"
+                    data-bi-cn="[1]" data-bi-ecn="[1]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c2c1c2c1c17m1r1a3">[1]</a>
+                <span>Microsoft 365, and some accessories and software sold separately. Features and app
+                    availability
+                    may vary by region. </span>
+            </li>
+            <li class="py-2" data-bi-id="c3c1c2c1c17m1r1a3" data-bi-cn="c3c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 2 referrer" href="#sup2" id="sup2"
+                    data-bi-cn="[2]" data-bi-ecn="[2]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c3c1c2c1c17m1r1a3">[2]</a>
+                <span>Battery life varies significantly based on device configuration,&nbsp;usage,
+                    network and feature
+                    configuration, signal strength, settings and other factors. See <a
+                        aria-label="Surface battery testing and estimated performance"
+                        href="https://aka.ms/SurfaceBatteryPerformance" class="ms-rte-link" target="_self"
+                        data-bi-id="n2c3c1c2c1c17m1r1a3" data-bi-ct="text" data-bi-cn="surface battery performance"
+                        data-bi-bhvr="COMMUNITY">Surface
+                        Battery Performance</a> for details.<br>
+                    <strong><br>
+                        Local video playback:<br>
+                        Up to 20 hours of battery life based on local video playback test on Surface
+                        Laptop 13.8
+                        inch<br>
+                    </strong>Testing conducted by Microsoft in April 2024 using preproduction software
+                    and preproduction
+                    Surface Laptop Snapdragon® X Plus C10 256GB, 16GB RAM devices. Testing consisted of
+                    full battery
+                    discharge during video playback of a .mov file through the Windows Media Player
+                    application in 1080p
+                    at 24 FPS. All settings were default except screen brightness set to 150 nits with
+                    Auto-brightness
+                    disabled. WiFi was connected to a network.Tested with Windows 11. Battery life
+                    varies significantly
+                    with settings, usage and other factors.<br>
+                    <strong><br>
+                        Up to 22 hours of battery life based on local video playback test on Surface
+                        Laptop 15 inch<br>
+                    </strong>Testing conducted by Microsoft in April 2024 using preproduction software
+                    and preproduction
+                    Surface Laptop Snapdragon® X Elite C12 512GB, 16GB RAM devices. Testing consisted of
+                    full battery
+                    discharge during video playback of a .mov file through the Windows Media Player
+                    application in 1080p
+                    at 24 FPS. All settings were default except screen brightness set to 150 nits with
+                    Auto-brightness
+                    disabled. WiFi was connected to a network. Tested with Windows 11. Battery life
+                    varies significantly
+                    with settings, usage and other factors.<br>
+                    <strong><br>
+                        Web browsing:</strong>&nbsp;<br>
+                    <strong>Up to 13 hours of battery life based on web browsing test on Surface Laptop
+                        13.8 inch<br>
+                    </strong>Based on web browsing test. Testing conducted by Microsoft in April 2024
+                    using
+                    preproduction software and preproduction Surface Laptop Snapdragon® X Plus C10
+                    256GB, 16GB RAM
+                    devices. Testing consisted of full battery discharge while accessing eight popular
+                    websites over
+                    multiple open tabs through the browser. All settings were default except screen
+                    brightness set to
+                    150 nits with Auto-Brightness disabled. WiFi was connected to a network. Tested with
+                    Windows 11.
+                    Battery life varies significantly with settings, usage and other factors.<br>
+                    <strong><br>
+                        Up to 15 hours of battery life based on based web browsing test on Surface
+                        Laptop 15 inch<br>
+                    </strong>Based on web browsing test. Testing conducted by Microsoft in April 2024
+                    using
+                    preproduction software and preproduction Surface Laptop Snapdragon® X Elite C12
+                    512GB, 16GB RAM
+                    devices. Testing consisted of full battery discharge while accessing eight popular
+                    websites over
+                    multiple open tabs through the browser. All settings were default except screen
+                    brightness set to
+                    150 nits with Auto-Brightness disabled. WiFi was connected to a network. Tested with
+                    Windows 11.
+                    Battery life varies significantly with settings, usage and other factors.<br>
+                    <br>
+                    <strong>Surface Pro Wi-Fi only models-connected using Wi-Fi</strong><br>
+                    <strong>Local video playback:</strong>&nbsp;Based on local video playback test.
+                    Battery life varies
+                    significantly based on usage, network and feature configuration, signal strength,
+                    settings, and
+                    other factors. See&nbsp;<a href="https://aka.ms/SurfaceBatteryPerformance" target="_blank"
+                        class="ms-rte-link" aria-label="Find Surface Battery performance information"
+                        data-bi-id="n3c3c1c2c1c17m1r1a3" data-bi-ct="text" data-bi-cn="aka.ms/surfacebatteryperformance"
+                        data-bi-bhvr="COMMUNITY">aka.ms/SurfaceBatteryPerformance</a> for details. Wi-Fi
+                    only models.
+                    Based on local video playback test. Testing conducted by Microsoft in April 2024
+                    using preproduction
+                    software and preproduction Surface Pro Snapdragon® X Plus C10 256GB and 512GB, 16GB
+                    RAM (LCD), Wi-Fi
+                    only devices and Surface Pro Snapdragon® X Elite C12 1TB 32GB RAM (OLED), Wi-Fi only
+                    devices.
+                    Testing consisted of full battery discharge during video playback of a .mov file
+                    through the Windows
+                    Media Player application in 1080p at 24 FPS. All settings were default except screen
+                    brightness set
+                    to 150 nits with Auto-brightness disabled. Wi-Fi was connected to a network. Battery
+                    life varies
+                    significantly with settings, usage, and other factors.<br>
+                    <strong>Web browsing:</strong>&nbsp;Based on a web browsing test. Battery life
+                    varies significantly
+                    based on usage, network and feature configuration, signal strength, settings and
+                    other factors.
+                    See&nbsp;<a href="https://aka.ms/SurfaceBatteryPerformance" target="_blank" class="ms-rte-link"
+                        aria-label="Find Surface Battery performance information" data-bi-id="n4c3c1c2c1c17m1r1a3"
+                        data-bi-ct="text" data-bi-cn="aka.ms/surfacebatteryperformance"
+                        data-bi-bhvr="COMMUNITY">aka.ms/SurfaceBatteryPerformance</a> for details. Wi-Fi
+                    only models.
+                    Based on a web browsing test. Testing conducted by Microsoft in April 2024 using
+                    preproduction
+                    software and preproduction Surface Pro Snapdragon® X Plus C10 256GB and 512GB, 16GB
+                    RAM (LCD), Wi-Fi
+                    only devices and Surface Pro Snapdragon® X Elite C12 1TB 32GB RAM (OLED), Wi-Fi only
+                    devices.
+                    Testing consisted of full battery discharge while accessing eight popular websites
+                    over multiple
+                    open tabs through the browser. All settings were default except screen brightness
+                    set to 150 nits
+                    with Auto-Brightness disabled. Wi-Fi was connected to a network. Battery life varies
+                    significantly
+                    with settings, usage, and other factors.<br>
+                    <br>
+                    <strong>Surface Pro Wi-Fi+5G models-connected using cellular</strong><br>
+                    <strong>Web browsing:</strong>&nbsp;Based on a web browsing test. Battery life
+                    varies significantly
+                    based on usage, network and feature configuration, signal strength, settings and
+                    other factors.
+                    See&nbsp;<a href="https://aka.ms/SurfaceBatteryPerformance" target="_blank" class="ms-rte-link"
+                        aria-label="Find Surface Battery performance information" data-bi-id="n5c3c1c2c1c17m1r1a3"
+                        data-bi-ct="text" data-bi-cn="aka.ms/surfacebatteryperformance"
+                        data-bi-bhvr="COMMUNITY">aka.ms/SurfaceBatteryPerformance</a> for
+                    details. Wi-Fi+5G models.
+                    Based on a web browsing test. Testing conducted by Microsoft in August 2024 using
+                    preproduction
+                    software and preproduction Surface Pro Snapdragon® X Plus C10 256GB, 16GB RAM (LCD)
+                    and Surface Pro
+                    Snapdragon® X Elite C12 512GB, 16GB RAM (OLED) devices. Testing consisted of full
+                    battery discharge
+                    while accessing eight popular websites over multiple open tabs through the browser.
+                    All settings
+                    were default except screen brightness set to 150 nits with Auto-Brightness disabled.
+                    Cellular
+                    enabled and device connected to a cellular network. Battery life varies
+                    significantly with settings,
+                    usage, and other factors. </span>
+            </li>
+            <li class="py-2" data-bi-id="c4c1c2c1c17m1r1a3" data-bi-cn="c4c1c2c1c17m1r1a3">
+
+                <span>Copilot for Microsoft 365 sold separately.<br>
+                    <br>
+                    Use Copilot key with supported Windows 11 devices; feature availability varies by
+                    device and market,
+                    see <a aria-label="KeySupport" href="https://aka.ms/KeySupport" class="ms-rte-link" target="_blank"
+                        data-bi-id="n1c4c1c2c1c17m1r1a3" data-bi-ct="text" data-bi-cn="aka.ms/keysupport"
+                        data-bi-bhvr="COMMUNITY">aka.ms/KeySupport</a>.
+                </span>
+            </li>
+            <li class="py-2" data-bi-id="c5c1c2c1c17m1r1a3" data-bi-cn="c5c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 4 referrer" href="#sup4" id="sup4"
+                    data-bi-cn="[4]" data-bi-ecn="[4]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c5c1c2c1c17m1r1a3">[4]</a>
+                <span>HDR requires HDR content and enabling HDR in device settings. </span>
+            </li>
+            <li class="py-2" data-bi-id="c6c1c2c1c17m1r1a3" data-bi-cn="c6c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 6 referrer" href="#sup6" id="sup6"
+                    data-bi-cn="[6]" data-bi-ecn="[6]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c6c1c2c1c17m1r1a3">[6]</a>
+                <span>Colours available on selected models only. Available colours, sizes, finishes and
+                    processors may
+                    vary by store, market and configuration. </span>
+            </li>
+            <li class="py-2" data-bi-id="c7c1c2c1c17m1r1a3" data-bi-cn="c7c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 7 referrer" href="#sup7" id="sup7"
+                    data-bi-cn="[7]" data-bi-ecn="[7]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c7c1c2c1c17m1r1a3">[7]</a>
+                <span>Wi-Fi 7: 802.11be supported, Wi-Fi 6E: 802.11ax compatible. Availability may vary
+                    by market.
+                </span>
+            </li>
+            <li class="py-2" data-bi-id="c8c1c2c1c17m1r1a3" data-bi-cn="c8c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 8 referrer" href="#sup8" id="sup8"
+                    data-bi-cn="[8]" data-bi-ecn="[8]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c8c1c2c1c17m1r1a3">[8]</a>
+                <span>Based on comparison of ENERGY STAR® ratings. </span>
+            </li>
+            <li class="py-2" data-bi-id="c9c1c2c1c17m1r1a3" data-bi-cn="c9c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 9 referrer" href="#sup9" id="sup9"
+                    data-bi-cn="[9]" data-bi-ecn="[9]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c9c1c2c1c17m1r1a3">[9]</a>
+                <span>Dual monitors require device with USB 4®/Thunderbolt™ 4 port. </span>
+            </li>
+            <li class="py-2" data-bi-id="c10c1c2c1c17m1r1a3" data-bi-cn="c10c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 10 referrer" href="#sup10" id="sup10"
+                    data-bi-cn="[10]" data-bi-ecn="[10]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c10c1c2c1c17m1r1a3">[10]</a>
+                <span>13.8" Surface Laptop comes with 39W Surface power supply. Fast charging (from 5%
+                    to 80%) is
+                    supported with minimum 65W Surface power supply or USB-C® PD charger, sold
+                    separately. Testing was
+                    conducted at Microsoft in February 2024, using pre-production devices, software, and
+                    minimum of 65W
+                    USB-C® charger under controlled conditions. The device was powered on to the desktop
+                    screen with
+                    default display brightness settings. Actual charge time will vary based on operating
+                    conditions.
+                    Measured at typical office ambient temperature of 23C. </span>
+            </li>
+            <li class="py-2" data-bi-id="c11c1c2c1c17m1r1a3" data-bi-cn="c11c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 11 referrer" href="#sup11" id="sup11"
+                    data-bi-cn="[11]" data-bi-ecn="[11]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c11c1c2c1c17m1r1a3">[11]</a>
+                <span>Surface Pro display has rounded corners within a standard rectangle. When measured
+                    as a standard
+                    rectangular shape the screen is 13 inches diagonally (actual viewable area is
+                    less).<br>
+                </span>
+            </li>
+            <li class="py-2" data-bi-id="c12c1c2c1c17m1r1a3" data-bi-cn="c12c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 12 referrer" href="#sup12" id="sup12"
+                    data-bi-cn="[12]" data-bi-ecn="[12]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c12c1c2c1c17m1r1a3">[12]</a>
+                <span>Recall is coming soon through a post-launch Windows Update.&nbsp;Optimised for
+                    selected languages
+                    (English, Chinese (simplified), French, German, Japanese and Spanish). Content-based
+                    and storage
+                    limitations apply. See <a aria-label="see more about Copilot+ PC"
+                        href="https://aka.ms/copilotpluspcs" class="ms-rte-link" target="_self"
+                        data-bi-id="n2c12c1c2c1c17m1r1a3" data-bi-ct="text"
+                        data-bi-cn="https://aka.ms/copilotpluspcs">https://aka.ms/copilotpluspcs</a>.
+                </span>
+            </li>
+            <li class="py-2" data-bi-id="c13c1c2c1c17m1r1a3" data-bi-cn="c13c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 13 referrer" href="#sup13" id="sup13"
+                    data-bi-cn="[13]" data-bi-ecn="[13]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c13c1c2c1c17m1r1a3">[13]</a>
+                <span>Microsoft Account required. Optimised for English text prompts. See <a
+                        aria-label="see more about Copilot+ PC" href="https://aka.ms/copilotpluspcs" class="ms-rte-link"
+                        data-bi-id="n2c13c1c2c1c17m1r1a3" data-bi-ct="text"
+                        data-bi-cn="https://aka.ms/copilotpluspcs">https://aka.ms/copilotpluspcs</a>.
+                </span>
+            </li>
+            <li class="py-2" data-bi-id="c14c1c2c1c17m1r1a3" data-bi-cn="c14c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 15 referrer" href="#sup15" id="sup15"
+                    data-bi-cn="[15]" data-bi-ecn="[15]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c14c1c2c1c17m1r1a3">[15]</a>
+                <span>Currently supports translation for video and audio subtitles into English from 40+
+                    languages. See
+                    <a href="https://aka.ms/copilotpluspcs" class="ms-rte-link" aria-label="see more about Copilot+ PC"
+                        target="_self" data-bi-id="n2c14c1c2c1c17m1r1a3" data-bi-ct="text"
+                        data-bi-cn="https://aka.ms/copilotpluspcs">https://aka.ms/copilotpluspcs</a>.
+                </span>
+            </li>
+            <li class="py-2" data-bi-id="c15c1c2c1c17m1r1a3" data-bi-cn="c15c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 17 referrer" href="#sup17" id="sup17"
+                    data-bi-cn="[17]" data-bi-ecn="[17]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c15c1c2c1c17m1r1a3">[17]</a>
+                <span>Microsoft Account required. </span>
+            </li>
+            <li class="py-2" data-bi-id="c16c1c2c1c17m1r1a3" data-bi-cn="c16c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 18 referrer" href="#sup18" id="sup18"
+                    data-bi-cn="[18]" data-bi-ecn="[18]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c16c1c2c1c17m1r1a3">[18]</a>
+                <span>Enclosure includes A Cover, C Bucket and D Cover. 100% recycled aluminium alloy in
+                    A Cover and C
+                    Bucket. 100% recycled rare earth metals in magnets. Based on validation performed by
+                    Underwriter
+                    Laboratories, Inc. using Environmental Claim Validation Procedure (ECVP) for
+                    Recycled Content, UL
+                    2809-2, Second Edition, 7 November 2023. </span>
+            </li>
+            <li class="py-2" data-bi-id="c17c1c2c1c17m1r1a3" data-bi-cn="c17c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 19 referrer" href="#sup19" id="sup19"
+                    data-bi-cn="[19]" data-bi-ecn="[19]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c17c1c2c1c17m1r1a3">[19]</a>
+                <span>Voice focus requires activation, requires Windows 11 and is available in apps
+                    which use integrated
+                    device microphones and use certain Windows audio processing modes. </span>
+            </li>
+            <li class="py-2" data-bi-id="c18c1c2c1c17m1r1a3" data-bi-cn="c18c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 20 referrer" href="#sup20" id="sup20"
+                    data-bi-cn="[20]" data-bi-ecn="[20]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c18c1c2c1c17m1r1a3">[20]</a>
+                <span>Compared to Surface Laptop 5. </span>
+            </li>
+            <li class="py-2" data-bi-id="c19c1c2c1c17m1r1a3" data-bi-cn="c19c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 23 referrer" href="#sup23" id="sup23"
+                    data-bi-cn="[23]" data-bi-ecn="[23]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c19c1c2c1c17m1r1a3">[23]</a>
+                <span>Replacement components available through online&nbsp;Microsoft
+                    Store&nbsp;and&nbsp;<a href="https://www.ifixit.com/Parts?q=Surface" target="_blank"
+                        class="ms-rte-link" aria-label="iFixIt" data-bi-id="n2c19c1c2c1c17m1r1a3" data-bi-ct="text"
+                        data-bi-cn="ifixit">iFixIt</a>&nbsp;for out-of-warranty
+                    repair. Components can be replaced by
+                    individuals with the knowledge and experience to repair electronic devices
+                    following&nbsp;<a href="https://www.microsoft.com/download/details.aspx?id=100440" target="_self"
+                        class="ms-rte-link" aria-label="Microsoft’s Service Guide" data-bi-id="n3c19c1c2c1c17m1r1a3"
+                        data-bi-ct="text" data-bi-cn="microsoft’s service guide">Microsoft’s Service Guide</a>.
+                    Microsoft tools (sold separately) may also be required. Availability of replacement
+                    components and
+                    service options may vary by product, market and over time. See&nbsp;<a
+                        href="https://support.microsoft.com/en-us/surface/self-repair-information-for-your-surface-device-56655149-c27a-432a-9936-bacd609a4b03"
+                        target="_self" class="ms-rte-link"
+                        aria-label="Self-repair information for your Surface device - Microsoft Support"
+                        data-bi-id="n4c19c1c2c1c17m1r1a3" data-bi-ct="text"
+                        data-bi-cn="self-repair information for your surface device - microsoft support"
+                        data-bi-bhvr="COMMUNITY">Self-repair information for your Surface device -
+                        Microsoft
+                        Support</a>.<br>
+                    <br>
+                    Opening and/or repairing a device can present electric shock, device damage, fire
+                    and personal
+                    injury risk, and other hazards. Use caution if undertaking self-service repairs.
+                    Unless required by
+                    law, damage caused during repair is not covered under Microsoft’s Limited Hardware
+                    Warranty or
+                    protection plans. </span>
+            </li>
+            <li class="py-2" data-bi-id="c20c1c2c1c17m1r1a3" data-bi-cn="c20c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 24 referrer" href="#sup24" id="sup24"
+                    data-bi-cn="[24]" data-bi-ecn="[24]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c20c1c2c1c17m1r1a3">[24]</a>
+                <span>System software uses significant storage space. Available storage is subject to
+                    change based on
+                    system software updates and apps usage. 1GB = 1 billion bytes. 1TB = 1,000GB.
+                    See&nbsp;<a aria-label="Surface Storage" href="https://surface.com/Storage" class="ms-rte-link"
+                        target="_self" data-bi-id="n2c20c1c2c1c17m1r1a3" data-bi-ct="text"
+                        data-bi-cn="surface storage">Surface Storage</a> for more
+                    details. </span>
+            </li>
+            <li class="py-2" data-bi-id="c21c1c2c1c17m1r1a3" data-bi-cn="c21c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 25 referrer" href="#sup25" id="sup25"
+                    data-bi-cn="[25]" data-bi-ecn="[25]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c21c1c2c1c17m1r1a3">[25]</a>
+                <span>Activation required. </span>
+            </li>
+            <li class="py-2" data-bi-id="c22c1c2c1c17m1r1a3" data-bi-cn="c22c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 27 referrer" href="#sup27" id="sup27"
+                    data-bi-cn="[27]" data-bi-ecn="[27]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c22c1c2c1c17m1r1a3">[27]</a>
+                <span>This device does not contain user serviceable parts. Hard drive is only removable
+                    by an authorised
+                    technician following Microsoft provided instructions. </span>
+            </li>
+            <li class="py-2" data-bi-id="c23c1c2c1c17m1r1a3" data-bi-cn="c23c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 28 referrer" href="#sup28" id="sup28"
+                    data-bi-cn="[28]" data-bi-ecn="[28]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c23c1c2c1c17m1r1a3">[28]</a>
+                <span>Requires Dolby Atmos® encoded content and audio. </span>
+            </li>
+            <li class="py-2" data-bi-id="c24c1c2c1c17m1r1a3" data-bi-cn="c24c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 29 referrer" href="#sup29" id="sup29"
+                    data-bi-cn="[29]" data-bi-ecn="[29]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c24c1c2c1c17m1r1a3">[29]</a>
+                <span>Requires Dolby Vision® encoded content and video. </span>
+            </li>
+            <li class="py-2" data-bi-id="c25c1c2c1c17m1r1a3" data-bi-cn="c25c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 30 referrer" href="#sup30" id="sup30"
+                    data-bi-cn="[30]" data-bi-ecn="[30]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c25c1c2c1c17m1r1a3">[30]</a>
+                <span>Microsoft’s Limited Warranty is in addition to your consumer law rights. </span>
+            </li>
+            <li class="py-2" data-bi-id="c26c1c2c1c17m1r1a3" data-bi-cn="c26c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 31 referrer" href="#sup31" id="sup31"
+                    data-bi-cn="[31]" data-bi-ecn="[31]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c26c1c2c1c17m1r1a3">[31]</a>
+                <span>Might vary depending on manufacturing processes. </span>
+            </li>
+            <li class="py-2" data-bi-id="c27c1c2c1c17m1r1a3" data-bi-cn="c27c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 32 referrer" href="#sup32" id="sup32"
+                    data-bi-cn="[32]" data-bi-ecn="[32]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c27c1c2c1c17m1r1a3">[32]</a>
+                <span>Requires licence or subscription (sold separately) to activate and use. </span>
+            </li>
+            <li class="py-2" data-bi-id="c28c1c2c1c17m1r1a3" data-bi-cn="c28c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 41 referrer" href="#sup41" id="sup41"
+                    data-bi-cn="[41]" data-bi-ecn="[41]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c28c1c2c1c17m1r1a3">[41]</a>
+                <span>Surface Pro with 5G only. 5G not available in all areas; compatibility and
+                    performance depends on
+                    carrier network, plan and other factors. See carrier for details and pricing.
+                </span>
+            </li>
+            <li class="py-2" data-bi-id="c29c1c2c1c17m1r1a3" data-bi-cn="c29c1c2c1c17m1r1a3">
+                <a class="superscript" aria-label="Return to footnote 43 referrer" href="#sup43" id="sup43"
+                    data-bi-cn="[43]" data-bi-ecn="[43]" data-bi-bhvr="0" data-bi-ct="text" data-bi-pa="Body"
+                    data-bi-compnm="Footnote" data-bi-id="n1c29c1c2c1c17m1r1a3">[43]</a>
+                <span>6 GHz band not available in all regions. </span>
+            </li>
+
+        </ul>
 
     </section>
-    <script src=" https://unpkg.com/swiper/swiper-bundle.min.js">
-    </script>
 
-    <!--=========== Aos js============-->
+</body>
+<!-- <script src=" https://unpkg.com/swiper/swiper-bundle.min.js">
+    </script> -->
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--=========== Aos js============-->
 
-    <script>
-        AOS.init();
-    </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!--=========== bootstrpe js============-->
+<script>
+    AOS.init();
+</script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-        crossorigin="anonymous"></script>
+<!--=========== bootstrpe js============-->
 
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+<!--========== swiper js===========-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>

@@ -664,4 +664,20 @@ main .swiper-wrapper{
     border:none;
     border-bottom: 1px solid grey;
 }
+  
+.para {
+    position: absolute;
+    z-index: 2;
+    bottom: 40px;
+    left: 0px;
+
+    /* left: 0px; */
+    /* top: 50px; */
+    height: 120px;
+    width: 100%;
+    background-color: #eaf6fd;
+    border: 1px solid blue;
+    border-radius: 20px;
+    overflow-y: visible !important;
+}
 }

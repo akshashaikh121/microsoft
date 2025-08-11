@@ -644,7 +644,7 @@ width: 150px;
     line-height: 15px !important;
 
 }
-.swiper-wrapper{
+main .swiper-wrapper{
     position: relative;
     bottom: 200px !important;
 }

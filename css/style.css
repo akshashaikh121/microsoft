@@ -5,9 +5,17 @@ body {
 .nav-I {
     margin: 0px 0px 0px 0px;
     background-color: #ffff;
-    height: 40px !important;
+    height: 100%;
+}
+.immg{
+    width: 16px !important;
+  
 }
 
+.immg-btn{
+      position: relative;
+    right: 25px;
+}
 /* .navbar-brand img {
     width: 80px;
 } */
@@ -165,6 +173,10 @@ h1 span {
     width: 87%;
     margin-top: 120px;
 }
+.text-container span{
+    color: rgba(22, 5, 205, 0.878) !important;
+}
+
 
 html,
 body {
@@ -237,9 +249,9 @@ body {
 
 .swiper-wrapper1 {
     width: 200px;
-    text-align: start;
+    text-align: start;          
 
-}
+}   
 
 .swiper-slide1 {
     display: flex;
@@ -396,33 +408,6 @@ table td {
 
 }
 
-@keyframes resize {
-    0% {
-        transform: translateY(0);
-        font-size: 178px;
-    }
-
-    100% {
-        transform: translateY(-120px);
-        font-size: 64px;
-        color: black;
-    }
-}
-
-@keyframes resize1 {
-    0% {
-        transform: translateY(0);
-        font-size: 18px;
-    }
-
-    100% {
-        transform: translateY(-90px);
-        font-size: 50px;
-        color: black;
-        margin-top: 100px;
-    }
-}
-
 .margin {
     margin: 0px !important;
 }
@@ -547,148 +532,4 @@ footer a:hover {
     text-decoration: underline;
 }
 
-#scrollbar {
-    color: #414040;
-}
 
-
-/* media quary */
-@media (min-width:800px) and (max-width:2000px) {
-    .responsive{
-        display: none;
-    }
-    
-@keyframes identifier {
-    0% {
-        transform: translateY(-50px);
-    }
-
-    100% {
-        transform: translateY(-150px);
-    }
-}
-
-.animation:hover .animation-I {
-
-    animation: identifier 1s ease 0s 1 alternate forwards;
-
-}
-}
-
-@media (min-width:320px) and (max-width:576px) {
-    /* .nav{
-     display: none !important; 
-   }  */
-    .main .navbar{
-        display: none;
-    }
-     /* .container-fluid{
-        display: none;
-     } */
-    .navbar{
-        margin:0 0 !important;
-   }
- .nav-i .logo{
-    width: 82px !important;
-    /* height: 10px !important; */
-}
-/* .collapse  .li{
-    font-size:80px !important ;
-} */
-
-.collapse .nav-item a{ 
-    font-size: 16px !important;
-    display: inline-block;
-    width: 100%;
-    border-bottom: 0.1px solid #b8b8b8 ;
-}
-.dropdown-menu{
-    background-color:#eaf6fd;
-    border: none;
-}
-.responsive .nav-I .container-fluid{
-    display: flex;
-    align-items: center;
-    
-}
- .video-background{
-    width: 100% !important;
-    height: 100%;
-
- }
- video{
-    width: 200% !important;
-    object-fit: contain;
-   
- }
-   .card {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-   }
-   .card span{
-font-size: 50px;
-   }
-   main{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-   }
-   main .card{
-    height: 100px;
-    width: 100%;
-    margin: 0px 30px;
-   }
-   .animation span{
-    font-size: 42px !important;
-   }
-   .animation-I{
-    display: flex;
-    flex-direction: column;
-
-   }
-   .swiper1,.swiper-wrapper1{
-    display: flex;
-    flex-direction: row !important;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 0px !important;
-   }
-.swiper-slide1{
-     display: flex;
-    flex-direction: column;
-    /* font-size: 14px !important; */
-    /* gap: 10px; */
-
-}
-.swiper-slide1 .btn{
-    font-size: 9px;
-
-}
-.swiper-slide1 .icon{
-    width: 30px !important;
-}
-.arrow{
-    width:30px;
-    height: 30px;
-}
-.swiper1{
-    display: flex;
-width: 100%;
-    gap: 50px !important;
-
-}
-.swiper1  .arrow img{
-    transform: rotate(270deg);
-}
-.video video{
-object-fit: fill;
-width: 100% !important;
-}
-.animation-I .card{
-    width:500px !important;
-    height: 200px !important;
-}
-}

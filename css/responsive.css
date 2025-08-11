@@ -341,7 +341,7 @@ font-size: 50px !important;
     }
      .swiper-II .swiper-wrapper img{
         position: relative;
-        bottom: 114px;
+        bottom: -77px;
      }
     
 .para {
@@ -364,7 +364,7 @@ font-size: 50px !important;
 .para1 {
     position: absolute;
     z-index: 2;
-    top: 290px;
+    top: 390px !important;
     left: 0px;
     bottom: 0px;
     height: 190px;
@@ -588,7 +588,7 @@ padding: 50px 10px !important;
         /* .main{
             position: relative;
         } */
-       main  .swiper-wrapper{
+       main .swiper-wrapper{
         position: relative;
         bottom: 190px;
          }

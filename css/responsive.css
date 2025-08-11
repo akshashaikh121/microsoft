@@ -644,6 +644,10 @@ width: 150px;
     line-height: 15px !important;
 
 }
+.swiper-wrapper{
+    position: relative;
+    bottom: 200px !important;
+}
 .explore{
     margin-top: 100px;
     padding: 20px;

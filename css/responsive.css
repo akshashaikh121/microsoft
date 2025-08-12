@@ -588,7 +588,7 @@ padding: 50px 10px !important;
     position: relative;
     top: 0px !important; */
     /* bottom: 200px !important; */
-}
+
 .swiper {
             width: 100% !important;
             height:auto !important;
@@ -703,3 +703,4 @@ main .swiper-wrapper {
     /* overflow-y: visible !important; */
 }
 
+}

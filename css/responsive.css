@@ -54,9 +54,11 @@
     /* .nav{
      display: none !important; 
    }  */
-
+html,body{
+    overflow-x: hidden;
+}
    body{
-    background-color: #fff !important;
+    background-color: #eaf6fd !important;
    }
     .main .navbar{
         display: none;
@@ -66,8 +68,13 @@
      } */
     .navbar{
         margin:0 0 !important;
-   }
+        padding: 0px;
 
+   }
+  
+.nav-II{
+    padding: 10px;
+}
    nav .navbar-toggler{
     padding: 0px 10px;
     border: none;
@@ -332,16 +339,16 @@ font-size: 50px !important;
             object-fit: cover;
         }
         .swiper-wrapper{
-            background-color: #fcfdfd !important        ;
-            height: 75vh;
+            background-color: #fcfdfd !important ;
+            height: auto;
     }
     .swiper-II .swiper-wrapper{
             background-color: #fcfdfd !important        ;
-            height: 85vh !important;
+            height: auto !important;
     }
      .swiper-II .swiper-wrapper img{
         position: relative;
-        bottom: -77px;
+        bottom: 112px;
      }
     
 .para {
@@ -364,7 +371,7 @@ font-size: 50px !important;
 .para1 {
     position: absolute;
     z-index: 2;
-    top: 390px !important;
+    /* top: 390px !important; */
     left: 0px;
     bottom: 0px;
     height: 190px;
@@ -649,8 +656,8 @@ main .swiper-wrapper{
     bottom: 200px !important;
 }
 .explore{
-    margin-top: 100px;
-    padding: 20px;
+    margin-top: 70px;
+    padding-top: 60px;
 }
 .nav-II {
     background-color:#fff;
@@ -662,7 +669,7 @@ main .swiper-wrapper{
 }
 .nav-II .container-fluid{
     border:none;
-    border-bottom: 1px solid grey;
+    /* border-bottom: 1px solid grey; */
 }
   
 .para {
@@ -680,4 +687,5 @@ main .swiper-wrapper{
     border-radius: 20px;
     overflow-y: visible !important;
 }
+
 }

@@ -627,6 +627,10 @@ main .swiper-slide{
 
 .swiper-II {
     height:auto;
+    background-color: #f7f8f9 !important;
+}
+.swiper-II div{
+    background-color: #f7f8f9 !important;
 }
 /* 
 .swiper-II .swiper {
@@ -668,7 +672,7 @@ main .swiper-wrapper {
     height: 190px;
     width: 100%;
     /* text-align: left; */
-    background-color: #fcfefe;
+    background-color: #f7f8f9;
     border-radius: 20px;
     line-height: 15px !important;
 

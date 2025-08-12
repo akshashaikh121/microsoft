@@ -300,7 +300,14 @@ body {
     height: 100vh;
     margin: 60px 0px 40px 0px;
 }
+.p-container{
+    position: relative;
+    left: 736px;
+    top: -550px;
+ /* width: 320px !important; */
+padding: 50px 10px !important;
 
+}
 
 .scroll-container {
     height: 300px;

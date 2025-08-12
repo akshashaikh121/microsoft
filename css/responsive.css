@@ -122,10 +122,17 @@ html,body{
     display: flex;
     align-items: center;
     
-} 
-header{
-    height: 30vh;
 }
+header{
+    margin-bottom: 100px !important;
+} 
+.header{
+    width: 100%;
+    height: 60vh;
+}
+/* header{
+    height: 1;
+} */
 .video-background {
         height: 60vh;
     }
@@ -424,8 +431,8 @@ font-size: 50px !important;
     bottom: 0px;
 }
 .swiper-II .swiper{
-    height: 85vh !important;
-    margin: 100px 0px;
+    height: auto !important;
+    margin: 0px 0px ;
     padding-top: 0px !important;
 }
 .explore img{
@@ -567,16 +574,16 @@ padding: 50px 10px !important;
 @media (min-width:320px) and (max-width:400px) {
     .container1{
  position: relative;
- width: 150vh;
+ width: 100%;
  height: 130vh;
  /* width: 200px; */
  /* margin-top: 200px; */
 }
 
 .p-container{
-    position: absolute;
-    left: 0px;
-    top: 450px;
+    position: static;
+    /* left: 0px;
+    top: 450px; */
  width: 320px !important;
 padding: 50px 10px !important;
 
@@ -655,7 +662,7 @@ main .swiper-wrapper {
 .para1 {
     position: absolute;
     z-index: 2;
-    top: 269px;
+    top: 299px;
     left: 0px;
     bottom: 0px;
     height: 190px;
@@ -671,7 +678,7 @@ main .swiper-wrapper {
     bottom: 200px !important;
 } */
 .explore{
-    margin-top: 70px;
+    margin-top: 0px;
     padding-top: 60px;
 }
 /* .nav-II {
@@ -701,6 +708,20 @@ main .swiper-wrapper {
     border: 0px solid blue;
     border-radius: 20px;
     /* overflow-y: visible !important; */
+}
+
+}
+@media (min-width:1090px) {
+    .p-container{
+    position: relative;
+    left: 686px;
+    top: -550px;
+ /* width: 320px !important; */
+padding: 50px 10px !important;
+
+}
+header{
+    height: 100vh;
 }
 
 }

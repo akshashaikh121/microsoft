@@ -727,5 +727,8 @@ padding: 50px 10px !important;
 header{
     height: 100vh;
 }
+.container1{
+    margin-bottom: 0px !important;
+}
 
 }
